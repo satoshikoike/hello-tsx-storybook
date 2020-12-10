@@ -1,0 +1,143 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+html,
+body,
+#root {
+  height: 100%;
+}
+
+@import '~antd/dist/antd.css';
+
+.ant-layout-content {
+  height: 100%;
+}
+
+.logo {
+  /* float: left; */
+  width: 31px;
+  height: 31px;
+  margin: 16px 32px 16px 16px;
+  /* background: rgba(255, 255, 255, 0.3); */
+  /* background: #dedede; */
+}
+
+.site-layout-background {
+  background: #fff;
+}
+
+.ant-layout-header {
+  background: #fff;
+  height: 52px;
+  line-height: 52px;
+  /* padding: 0 20px; */
+  padding: 0;
+}
+
+/* const breakponts = {
+  xs: '480px',
+  sm: '576px',
+  md: '768px',
+  lg: '992px',
+  xl: '1200px',
+  xxl: '1600px',
+}; */
+
+@media (max-width: 480px) {
+  .logo-xs {
+    display: inline;
+  }
+  .logo-sm,
+  .logo-md,
+  .logo-lg,
+  .logo-xl,
+  .logo-xxl {
+    display: none;
+  }
+}
+
+@media (min-width: 480px) and (max-width: 576px) {
+  .logo-sm {
+    display: inline;
+  }
+
+  .logo-xs,
+  .logo-md,
+  .logo-lg,
+  .logo-xl,
+  .logo-xxl {
+    display: none;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 768px) {
+  .logo-md {
+    display: inline;
+  }
+
+  .logo-xs,
+  .logo-sm,
+  .logo-lg,
+  .logo-xl,
+  .logo-xxl {
+    display: none;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 992px) {
+  .logo-lg {
+    display: inline;
+  }
+
+  .logo-xs,
+  .logo-sm,
+  .logo-md,
+  .logo-xl,
+  .logo-xxl {
+    display: none;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1200px) {
+  .logo-xl {
+    display: inline;
+  }
+
+  .logo-xs,
+  .logo-sm,
+  .logo-md,
+  .logo-lg,
+  .logo-xxl {
+    display: none;
+  }
+}
+
+@media (min-width: 1200px) {
+  .logo-xxl {
+    display: inline;
+  }
+
+  .logo-xs,
+  .logo-sm,
+  .logo-md,
+  .logo-lg,
+  .logo-xl {
+    display: none;
+  }
+}
+
+@media (max-width: 768px) {
+  .ant-layout-sider {
+    display: none;
+  }
+}
+
+.ant-menu-inline-collapsed {
+  width: 62px;
+}
